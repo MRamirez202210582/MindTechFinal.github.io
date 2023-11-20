@@ -1,0 +1,577 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.171)), url('../img/Fondo.jpg'); /* Asegúrate de que la ruta de la imagen sea la correcta */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky; 
+    width: 100%; 
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin: auto;
+    background: #bdc3c7;
+    height: 90px;
+    width: 100%;
+    
+}
+
+nav ul{
+    /*float: left;
+    margin-left: 0px;*/
+
+    float: right;
+    margin-right: 0px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 30px;
+}
+
+.logo {
+    position:fixed;
+    left: 550px;
+    top:40px;
+    z-index: 999;
+}
+
+.logo img{
+    height: 60px;
+    max-width: 70px;
+    height: auto;
+}
+
+.divider {
+    font-size: 60px;
+    pointer-events: none;
+    margin-left: 40px;
+}
+
+/* Sobrescribe los estilos de hover para .divider */
+li a.divider:hover {
+    border: none;
+    background: none;
+    transition: none;
+}
+
+nav ul li a{
+    color: black;
+    font-size: 18px;
+    padding: 3px 12px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    border: 5px solid transparent;
+}
+
+li a:hover{
+    border: 5px solid black;
+    background: transparent;
+    transition: 0s;
+}
+
+.Perfil a:hover{
+    border: none;
+}
+
+section.Principal{
+    background: linear-gradient(to left, rgb(transparent), rgb(transparent));
+    padding: 5rem 1rem;
+}
+
+h1{
+    font-size: 4rem;
+    color: black;
+}
+
+/* Haz que el contenedor sea un contenedor flex */
+.boxP.col1-md-5.col12 {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: right;
+    margin-top: -100px;
+}
+
+/* Establecer el tamaño de la imagen */
+.imgSuma {
+    width: 100px; 
+    height: auto;
+    margin: 0;
+}
+
+.CuadroTextoBlanco{
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: left; 
+    margin-top: 20px; 
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.CuadroTextoBlanco p{
+    font-size: 1.5rem; 
+    color: #333; 
+    margin: 0;
+}
+
+
+.containerP {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CalendarioContainer{
+    display: flex;
+    align-items: center;
+}
+
+.CalendarioImg{
+    margin-left: 10px;
+}
+
+.CalendarioImg img {
+    width: 40px;
+    position: relative;
+    left: 1400px;
+}
+
+.BotonCalendario{
+    background-color: transparent; 
+    border: 2px solid black; 
+    color: black; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 30px; 
+    display: inline-block; 
+    position: relative;
+    left: 1400px;
+}
+
+.boxP.col2{
+    background-color: rgba(123, 255, 163, 0.726);
+    margin-bottom: 5px;
+    margin-top: -150px;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    color: black;
+    border-width: 2px;
+    border-color: transparent;
+    position: relative;
+}
+
+#servicio.content{
+    height: 100vh;
+    padding-top: 100px;
+    margin-top: 450px;
+    background-color: rgb(166, 204, 166);
+}
+
+#psiquiatra.content{
+    height: 100vh;
+    padding-top: 100px;
+    margin-top: 10px;
+    background-color: rgb(166, 204, 166);
+}
+
+#trato.content{
+    height: 100vh;
+    padding-top: 100px;
+    margin-top: 10px;
+    background-color:rgb(166, 204, 166);
+}
+
+#planes.content{
+    height: 100vh;
+    padding-top: 100px;
+    margin-top: 10px;
+    background-color:rgb(166, 204, 166);
+
+}
+
+#contacto.content{
+    height: 100vh;
+    padding-top: 100px;
+    margin-top: 10px;
+    background-color:rgb(166, 204, 166);
+}
+#cita.content{
+    height: 100vh;
+    padding-top: 100px;
+    margin-top: 10px;
+    background-color: rgb(166, 204, 166);
+}
+
+#calendario.content{
+    height: 100vh;
+    padding-top: 100px;
+    margin-top: 10px;
+    background-color: rgb(166, 204, 166);
+}
+
+h4{
+    font-size: 4rem;
+    color: cornflowerblue;
+    margin:0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Planes*/
+.planesTitulo{
+    font-size: 4rem;
+    color: cornflowerblue;
+    margin-top:10px ;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+}
+.Container{
+    width:100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top:  50px;
+    overflow-x: auto;
+}
+
+.Boxp{
+    color:deepskyblue;
+    background-color:darkslategrey;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-start;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0/6%);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.Boxp p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Boton{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(7, 193, 255);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkslategrey;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+h3{
+    flex-direction: column; 
+    margin-right: 10px;
+    padding: 5px ; 
+    color: deepskyblue;
+    position: relative;
+    float: right;
+    line-height: 1.2; 
+    vertical-align: middle;
+    margin-top: 0; 
+    margin-bottom: 10px; 
+}
+
+/*Contacto*/
+.doctor img{
+    height: 500px;
+    width: 500px;
+    float: left;
+    display: block;
+
+}
+
+.Contentc{
+    height: 500px;
+    width: 500px;
+    color:rgb(21, 157, 202);
+    float:left;
+    /*padding:250px;*/
+    padding-top: 100px;
+    padding-left: 250px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    font-size: 25px;
+}
+
+.Contentc button{
+    height: 50px;
+    width: 100px;
+}
+
+/*Tratos*/
+.text-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: .6em 1.5em;
+}
+
+.text {
+    margin-bottom: 10px;
+    font-size: 20px
+}
+
+.imgt img {
+    width: 100px;
+    height: 100px;
+}
+
+/*Cita*/
+.containerC{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.imgC{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.itemC{
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: .6em 1.5em;
+    background-color: ghostwhite;
+}
+
+.itemC img{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.textboxC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textboxC label{
+    display: block;
+    margin-bottom: 5px;
+   
+}
+
+.textboxC input {
+    width: 250px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/*PSIQUIATRAS*/
+
+.ContainerP{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: .3em 1.5em;
+    background-color: ghostwhite;
+}
+
+.PC{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.PC img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/*Servicios*/
+.ContenidoServicios{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.ServiciosImg {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: .3em 1.5em;
+    background-color: ghostwhite;
+}
+
+
+.CuadroImagenServicios {
+    text-align: center;
+}
+
+.CuadroImagenServicios img {
+    width: 150px;
+    height: 150px;
+}
+
+.InfoServicios {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.CuadroInfoServInput{
+    background-color: white;
+    padding: 3px 10px; 
+    margin-bottom: 2px;
+    width: 30%; 
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.botonConfirmar{
+    background-color: #333; 
+    color: white; 
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+    padding: .3em 1.5em;
+}
+
+.Imagen-esquina img{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*Footer*/
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 70px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main_icon{
+    width: 30px;
+    height: 30px;
+}
+
+/*Calendario*/
+.c img{
+    width: 250px;
+    height: 250px;
+    display: block; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.formulario{
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    margin: auto;
+    padding: 10px;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input{
+    background: transparent;
+    color: black;
+    outline: none;
+    border: 1px solid black;
+    padding: 5px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+.input::placeholder{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type="fecha"],
+input[type="NE"]{
+    margin-bottom: 10px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.Perfil img{
+    height: 40px;
+    max-width: 50px;
+    width: auto;
+    border: none;
+    border-radius: 0;
+}
+
+
